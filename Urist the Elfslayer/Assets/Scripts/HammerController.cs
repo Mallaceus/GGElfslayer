@@ -49,7 +49,8 @@ public class HammerController : MonoBehaviour
 	// When hammer hits an collider.
 	private void OnCollisionStay2D(Collision2D collision)
 	{
-		float hammerSpeed = Mathf.Abs((mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y)).x);
+		float hammerSpeed = Mathf.Exp(Mathf.Abs((mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y)).x) * 0.7f);
+
 		var destructible = collision.gameObject.GetComponent<Destructible>();
 		if (destructible && hammerSpeed > minHammerSpeedForDamage)
 		{
