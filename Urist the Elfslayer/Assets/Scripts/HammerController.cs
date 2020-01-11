@@ -7,12 +7,13 @@ public class HammerController : MonoBehaviour
 	[SerializeField] GameObject hammer;
 	[SerializeField] GameObject hammerHead;
 	[SerializeField] GameObject player;
+	Rigidbody2D playerRigidBody;
 
-	[SerializeField] float force = 50;
+	[SerializeField] float playerForce = 50;
 	[SerializeField] float hammerSmoothingSpeed = 10;
 	[SerializeField] float hammerSmoothingDecreaseMulitplier = 0.05f;
 	bool hammerInGround;
-
+	[SerializeField] float minHammerSpeedForDamage = 5;
 	Camera myCamera;
 	Vector2 mousePos;
 	Vector2 mouseVec;
@@ -21,11 +22,12 @@ public class HammerController : MonoBehaviour
 	void Start()
     {
 		myCamera = FindObjectOfType<Camera>();
+		playerRigidBody = player.GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-		mousePos = myCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+		mousePos = myCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -myCamera.transform.position.z));
 		Vector2 centerRotVec = new Vector2(player.transform.position.x, player.transform.position.y);
 		mouseVec = mousePos - centerRotVec;
 
@@ -42,22 +44,29 @@ public class HammerController : MonoBehaviour
 	{
 		float angle = Mathf.Atan2(mouseVec.y, mouseVec.x) * Mathf.Rad2Deg;
 		hammer.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.LerpAngle(hammer.transform.rotation.eulerAngles.z, angle, Time.deltaTime * hammerSmoothingSpeed * (hammerInGround ? 0.2f : 1))));
-
-		//Vector2 forceVec = mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y);
-		//GetComponent<Rigidbody2D>().AddTorque(Vector3.Project(forceVec, hammerHead.transform.right).magnitude);
 	}
 
 	// When hammer hits an collider.
 	private void OnCollisionStay2D(Collision2D collision)
 	{
-		hammerInGround = true;
-		Vector2 forceVec = mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y);
-		player.GetComponent<Rigidbody2D>().AddForce(-hammerHead.transform.up * force * Mathf.Sign(collision.contacts[0].point.x - hammerHead.transform.position.x) * Mathf.Abs((mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y)).x));
+		float hammerSpeed = Mathf.Abs((mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y)).x);
+		var destructible = collision.gameObject.GetComponent<Destructible>();
+		if (destructible && hammerSpeed > minHammerSpeedForDamage)
+		{
+			destructible.Hurt(5000, 0, collision.contacts[0].point);
+		}
+
+		// Move player according to the distance between the hammerhead and mousePos.
+		else
+		{
+			hammerInGround = true;
+			Vector2 forceVec = mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y);
+			playerRigidBody.AddForce(-hammerHead.transform.up * playerForce * Mathf.Sign(collision.contacts[0].point.x - hammerHead.transform.position.x) * hammerSpeed);
+		}
 	}
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
 		hammerInGround = false;
-
 	}
 }
