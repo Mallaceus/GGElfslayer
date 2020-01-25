@@ -166,8 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -282,8 +282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -536,8 +536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -594,8 +594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -652,8 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -710,8 +710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -873,8 +873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -931,8 +931,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -989,8 +989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1047,8 +1047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1105,8 +1105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1163,8 +1163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1221,8 +1221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1279,8 +1279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1337,8 +1337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1464,8 +1464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1522,8 +1522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1580,8 +1580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1749,8 +1749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1807,8 +1807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -1960,8 +1960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
@@ -2018,8 +2018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructible: 1
   destroyOnDeath: 1
-  maxHealth: 100
-  health: 100
+  maxHealth: 1
+  health: 1
   resistance: 0
   regeneration: 0
   regenerationInterval: 5
