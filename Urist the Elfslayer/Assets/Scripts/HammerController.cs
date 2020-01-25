@@ -10,10 +10,12 @@ public class HammerController : MonoBehaviour
 	Rigidbody2D playerRigidBody;
 
 	[SerializeField] float playerForce = 50;
+	[SerializeField] float playerMaxVelocity = 10f;
 	[SerializeField] float hammerSmoothingSpeed = 10;
 	[SerializeField] float hammerSmoothingDecreaseMulitplier = 0.05f;
 	bool hammerInGround;
 	[SerializeField] float minHammerSpeedForDamage = 5;
+	[SerializeField] float damage = 10;
 	Camera myCamera;
 	Vector2 mousePos;
 	Vector2 mouseVec;
@@ -54,7 +56,7 @@ public class HammerController : MonoBehaviour
 		var destructible = collision.gameObject.GetComponent<Destructible>();
 		if (destructible && hammerSpeed > minHammerSpeedForDamage)
 		{
-			destructible.Hurt(5000, 0, collision.contacts[0].point);
+			destructible.Hurt(damage, 0, collision.contacts[0].point);
 		}
 
 		// Move player according to the distance between the hammerhead and mousePos.
@@ -62,7 +64,9 @@ public class HammerController : MonoBehaviour
 		{
 			hammerInGround = true;
 			Vector2 forceVec = mousePos - new Vector2(hammerHead.transform.position.x, hammerHead.transform.position.y);
-			playerRigidBody.AddForce(-hammerHead.transform.up * playerForce * Mathf.Sign(collision.contacts[0].point.x - hammerHead.transform.position.x) * hammerSpeed);
+			Vector2 force = -hammerHead.transform.up * playerForce * Mathf.Sign(collision.contacts[0].point.x - hammerHead.transform.position.x) * hammerSpeed;
+			force = Vector2.ClampMagnitude(force, playerMaxVelocity);
+			playerRigidBody.AddForce(force);
 		}
 	}
 
