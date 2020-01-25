@@ -119,9 +119,10 @@ GameObject:
   - component: {fileID: 3763462246539112552}
   - component: {fileID: 3763462246539112550}
   - component: {fileID: 3763462246539112551}
+  - component: {fileID: 3728293270850580100}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,6 +191,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &3728293270850580100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3763462246539112548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd3ab5d8a4040a428f864ab4555c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructible: 1
+  destroyOnDeath: 1
+  maxHealth: 100
+  health: 100
+  resistance: 0
+  regeneration: 0
+  regenerationInterval: 5
+  hitEffect: {fileID: 0}
+  OnHurt:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3763462247325654243
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,9 +268,11 @@ MonoBehaviour:
   hammerHead: {fileID: 2024558405}
   player: {fileID: 3763462246539112548}
   playerForce: 10
+  playerMaxVelocity: 300
   hammerSmoothingSpeed: 10
   hammerSmoothingDecreaseMulitplier: 0.00002
   minHammerSpeedForDamage: 5
+  damage: 10
 --- !u!61 &3763462247325654244
 BoxCollider2D:
   m_ObjectHideFlags: 0
