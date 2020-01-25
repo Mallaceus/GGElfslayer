@@ -6,9 +6,15 @@ public class EnemyAI : MonoBehaviour
 {
 	[SerializeField] public float detectionRaidus = 10;
 	[SerializeField] public float speed = 3;
+
+	[Space]
+	[SerializeField] public bool isRange;
 	[SerializeField] public float attackRange = 2;
 	[SerializeField] public float damage = 10;
 	[SerializeField] public float chargeTime = 3;
+	[SerializeField] public Projectile projectile;
+	[SerializeField] public float projectileForce = 10;
+	[SerializeField] public Transform firePoint;
 
 	[HideInInspector] public GameObject player;
 	[HideInInspector] public Animator animator;
@@ -104,9 +110,18 @@ class Attacking : EnemyState
 			if(enemyAI.animator != null)
 				enemyAI.animator.SetTrigger("Attack");
 
-			enemyAI.player.GetComponent<Destructible>().Hurt(enemyAI.damage);
-
 			float distance = Vector2.Distance(enemyAI.player.transform.position, enemyAI.transform.position);
+			if (!enemyAI.isRange && distance < enemyAI.attackRange)
+				enemyAI.player.GetComponent<Destructible>().Hurt(enemyAI.damage);
+			else if(enemyAI.isRange)
+			{
+				var projectile = MonoBehaviour.Instantiate(enemyAI.projectile, enemyAI.firePoint.position, enemyAI.transform.rotation);
+				Vector3 direction = (enemyAI.player.transform.position - enemyAI.firePoint.position).normalized;
+				projectile.transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
+				projectile.Damage = enemyAI.damage;
+				projectile.GetComponent<Rigidbody2D>().AddForce(-enemyAI.transform.right * enemyAI.projectileForce);
+			}
+
 			if (distance > enemyAI.attackRange)
 				enemyAI.SwitchState(new Tracking());
 			else
