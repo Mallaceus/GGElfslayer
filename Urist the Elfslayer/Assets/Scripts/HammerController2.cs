@@ -52,7 +52,7 @@ public class HammerController2 : MonoBehaviour
 
     void CalculateVelocity()
     {
-        hammerheadVelocity = new Vector2(hammerHead.transform.position.x - lastHammerheadPos.x, hammerHead.transform.position.y - lastHammerheadPos.y);
+        hammerheadVelocity = new Vector2((hammerHead.transform.position.x - lastHammerheadPos.x) / Time.fixedDeltaTime, (hammerHead.transform.position.y - lastHammerheadPos.y) / Time.fixedDeltaTime);
         lastHammerheadPos = hammerHead.transform.position;
     }
 
