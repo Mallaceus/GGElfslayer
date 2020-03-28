@@ -1423,35 +1423,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f104db78d2783f54b9185984f26286dc, type: 3}
---- !u!1 &1318767522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3763462247325654243, guid: f104db78d2783f54b9185984f26286dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1318767521}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1318767523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318767522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFX/Characters/Urist/Hammer Hit Dirt
-  PlayEvent: 9
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &1392619355 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5024805618349231998, guid: 59c620169a5214b4d935d2a96ea83fd5,
@@ -1795,60 +1766,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1862624182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1862624184}
-  - component: {fileID: 1862624183}
-  m_Layer: 0
-  m_Name: Audio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1862624183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862624182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Music/Truddelutt
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!4 &1862624184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862624182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26862907, y: 1.8045473, z: -2.1668434}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900480548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5024805617762445370, guid: 59c620169a5214b4d935d2a96ea83fd5,
@@ -2590,32 +2507,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 15.22
       objectReference: {fileID: 0}
-    - target: {fileID: 7785364742921237629, guid: f90d020ea0a384345915dc26adb3263c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90d020ea0a384345915dc26adb3263c, type: 3}
---- !u!1 &7785364743717424480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7785364742921237630, guid: f90d020ea0a384345915dc26adb3263c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7785364743717424479}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7785364743717424481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7785364743717424480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: -1
 --- !u!1001 &8776310936435093797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2685,32 +2578,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55c03c83742f734ebe2a24f5444e5c6, type: 3}
---- !u!1 &8776310936435093798 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 786534930433435134, guid: a55c03c83742f734ebe2a24f5444e5c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 8776310936435093797}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8776310936435093799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8776310936435093798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFX/Characters/Urist/Hammer Hit Enemy
-  PlayEvent: 2
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
