@@ -36,6 +36,7 @@ sysinfo.txt
 *.unitypackage
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.meta
 <<<<<<< HEAD
 *.log
@@ -46,3 +47,6 @@ Urist the Elfslayer/fmod_editor.log
 >>>>>>> parent of 6bbcda6... fmod
 =======
 >>>>>>> parent of 6bbcda6... fmod
+=======
+>>>>>>> parent of 6bbcda6... fmod
+*.log
