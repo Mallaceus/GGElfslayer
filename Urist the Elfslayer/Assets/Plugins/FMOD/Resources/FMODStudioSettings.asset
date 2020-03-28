@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: ../../FMOD/Urist/Urist.fspro
-  sourceBankPath: Assets\StreamingAssets\Desktop
+  sourceBankPath: Assets\FMOD\Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
