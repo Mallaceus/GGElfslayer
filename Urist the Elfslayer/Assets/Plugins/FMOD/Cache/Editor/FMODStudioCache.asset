@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9160900593899832183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD/Urist/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637153808025030512
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-8837432994573614327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Urist/Hammer Hit Dirt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Urist/Hammer Hit Dirt
+  guid: 483f1b0631671a4db358b9e791d1f851
+  Banks:
+  - {fileID: -8651763642472098326}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 602
+--- !u!114 &-8651763642472098326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210034455294026
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2518731613272883325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637210034455334133
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 952
+  Exists: 1
+--- !u!114 &-2156029018927757086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD/Urist/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637153808025245110
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 952
+  Exists: 0
+--- !u!114 &-1495607679891981915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Urist/Hammer Hit Stone
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Urist/Hammer Hit Stone
+  guid: 99515b345bcc9d4dabaf888d65c5e5f7
+  Banks:
+  - {fileID: -8651763642472098326}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 602
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -2518731613272883325}
+  - {fileID: -8651763642472098326}
+  EditorEvents:
+  - {fileID: 6255864361002407458}
+  - {fileID: -8837432994573614327}
+  - {fileID: 4226610811094123348}
+  - {fileID: 115584146882034311}
+  - {fileID: -1495607679891981915}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -8651763642472098326}
+  StringsBanks:
+  - {fileID: -2518731613272883325}
+  stringsBankWriteTime: 637210034455334133
+  cacheVersion: 3
+--- !u!114 &115584146882034311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Urist/Hammer Swing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Urist/Hammer Swing
+  guid: 75ee1727740cb943be4a50d4c634be48
+  Banks:
+  - {fileID: -8651763642472098326}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 392
+--- !u!114 &4226610811094123348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Truddelutt
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Truddelutt
+  guid: 640455f065ab6144a6a40d895474b147
+  Banks:
+  - {fileID: -8651763642472098326}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10666
+--- !u!114 &6255864361002407458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Urist/Hammer Hit Enemy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Urist/Hammer Hit Enemy
+  guid: 3265dbccb7375d4fb8dd235c0c24f21d
+  Banks:
+  - {fileID: -8651763642472098326}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1982
